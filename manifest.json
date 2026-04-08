@@ -8,14 +8,15 @@
     "declarativeNetRequestWithHostAccess"
   ],
   "host_permissions": [
-    "*://*.instagram.com/*"
+    "*://*.instagram.com/*",
+    "https://www.youtube.com/shorts/*"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.instagram.com/*"],
+      "matches": ["*://*.instagram.com/*", "https://www.youtube.com/shorts/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
@@ -23,7 +24,7 @@
   "web_accessible_resources": [
     {
       "resources": ["pause.html"],
-      "matches": ["*://*.instagram.com/*"]
+      "matches": ["*://*.instagram.com/*", "https://www.youtube.com/shorts/*"]
     }
   ]
 }
