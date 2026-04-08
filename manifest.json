@@ -24,7 +24,7 @@
   "web_accessible_resources": [
     {
       "resources": ["pause.html"],
-      "matches": ["*://*.instagram.com/*", "https://www.youtube.com/shorts/*"]
+      "matches": ["*://*.instagram.com/*", "https://www.youtube.com/*"]
     }
   ]
 }
